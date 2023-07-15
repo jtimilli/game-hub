@@ -11,7 +11,7 @@ const GameGrid = () => {
       <SimpleGrid
         columns={[1, null, 2, null, 3, null, 5]}
         padding="10px"
-        spacing={10}
+        spacing={8}
       >
         {games.map(game => (
           <GameCards game={game} />
