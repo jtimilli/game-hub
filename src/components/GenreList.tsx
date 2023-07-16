@@ -3,11 +3,11 @@ import React from "react";
 import useGenre from "../hooks/useGenres";
 
 const GenreList = () => {
-  const { genres } = useGenre();
+  const { data } = useGenre();
 
   return (
     <VStack>
-      {genres.map(genre => (
+      {data.map(genre => (
         <Box key={genre.id}>{genre.name}</Box>
       ))}
     </VStack>
