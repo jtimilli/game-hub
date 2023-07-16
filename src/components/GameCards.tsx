@@ -18,7 +18,7 @@ interface Card {
 const GameCards = ({ game }: Card) => {
   return (
     <>
-      <Card overflow="hidden" width="400px" borderRadius={10}>
+      <Card>
         <Image src={getCroppedUrl(game.background_image)} />
         <CardBody>
           <Heading fontSize="2xl">{game.name}</Heading>
