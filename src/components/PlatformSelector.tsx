@@ -20,9 +20,10 @@ const GamesPlatforms = ({ selectedPlatforms, onPlatformSelect }: Props) => {
       <MenuList>
         {data.map(platform => (
           <MenuItem
-            onClick={() => onPlatformSelect(platform)}
             key={platform.id}
+            onClick={() => onPlatformSelect(platform)}
           >
+            {" "}
             {platform.name}
           </MenuItem>
         ))}
